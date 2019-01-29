@@ -1,0 +1,70 @@
+{
+  "name": "worldpay-ecommerce",
+  "version": "1.0.0",
+  "description": "WorldPay E-commerce assignment",
+  "author": "Guillermo",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate",
+    "test": "NODE_ENV=test jest",
+    "test:tdd": "NODE_ENV=test jest --watchAll --coverage",
+    "test:coverage": "NODE_ENV=test jest --coverage"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.3.1",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "gsap": "^1.20.3",
+    "node-sass": "^4.7.2",
+    "nuxt": "^2.4.0",
+    "sass-loader": "^6.0.6",
+    "vue-stripe-elements-plus": "^0.2.6",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.0.0-beta.40",
+    "@types/jest": "^23.0.0",
+    "@vue/test-utils": "1.0.0-beta.11",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-junit": "^1.0.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.13.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.4.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.3.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.1.0",
+    "jest-junit": "^5.0.0",
+    "lint-staged": "^6.1.0",
+    "mwangaben-vthelpers": "^1.2.1",
+    "pre-commit": "^1.2.2",
+    "stylus-loader": "^3.0.1",
+    "vue-jest": "^2.6.0"
+  },
+  "jest-junit": {
+    "output": "coverage/junit/js-test-results.xml"
+  },
+  "eslint-junit": {
+    "output": "coverage/junit/js-eslint-results.xml"
+  },
+  "engines": {
+    "node": ">=8.3.0"
+  }
+}
