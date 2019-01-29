@@ -4,7 +4,8 @@ For this assignment I've developed an ficticious E-commerce storefront in VueJS 
 # Starting the server
 To run the e-commerce store on your own machine simply follow the next steps:
  - Download this repo & cd to the root folder
- - Run `npm run dev`
+ - Run `npm install` to install dependencies
+ - Run `npm run dev` to start the server
  - Go to `http://localhost:3000/`
 
 # UI details
